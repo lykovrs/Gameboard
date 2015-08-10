@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        link(href='https://fonts.googleapis.com/css?family=Roboto:400,100,300', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Oswald', rel='stylesheet', type='text/css')
+        link(href='https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css', rel='stylesheet')
+        link(href='css/main.css', rel='stylesheet')
+        script(src='js/vendor/angular.min.js')
+    body(ng-app='GameboardApp')
+        .header
+            h1.logo GameBoard
+        .main(ng-controller='ScoreController')
+            .container
+                .row
+                    game(info='score', ng-repeat='score in scores')
+        // Modules
+        script(src='js/app.js')
+        // Controllers
+        script(src='js/controllers/ScoreController.js')
+        // Directives
+        script(src='js/directives/game.js')

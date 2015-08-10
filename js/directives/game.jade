@@ -1,0 +1,17 @@
+.col-sm-4
+    .row.scorecard
+        p.period {{ info.period }}
+        .visitor.col-xs-4
+            h2.visitor-score {{ info.visitor_score }}
+            h3
+                span.visitor-city {{ info.visitor_team.city }}
+                br
+                span.visitor-name {{ info.visitor_team.name }}
+        .dash.col-xs-3
+            h2 -
+        .home.col-xs-4
+            h2.home-score {{ info.home_score }}
+            h3
+                span.home-city {{ info.home_team.city }}
+                br
+                span.home-name {{ info.home_team.name }}
